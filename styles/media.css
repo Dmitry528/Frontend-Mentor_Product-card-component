@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 343px;
+  }
+
+  .card-info {
+    padding: 24px;
+  }
+
+  .card-info {
+    gap: 1rem;
+  }
+}

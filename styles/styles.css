@@ -1,0 +1,95 @@
+.wrapper {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--cream);
+}
+
+.card {
+  display: flex;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  padding: 32px;
+
+  background-color: var(--white);
+}
+
+.card__image {
+  display: flex;
+}
+
+.card-info__product-type {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+}
+
+.card-info__title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  color: var(--very-dark-blue);
+}
+
+.card-info__text {
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card-info__price {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: 'Fraunces', serif;
+  color: var(--dark-cyan);
+}
+
+.card-info__previous-price {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--dark-grayish-blue);
+}
+
+.card-info__button {
+  width: 100%;
+  padding: 16px 0px;
+  background-color: var(--dark-cyan);
+
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.card-info__button:is(:hover, :active) {
+  background-color: var(--very-dark-cyan);
+}
